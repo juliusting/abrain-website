@@ -30,8 +30,15 @@ theme. Built from the FastEV `build-business-website` scaffold.
 - ChatGPT-generated: `hero-lock.png`, `steel-macro.png`.
 - Regenerate via `gemini-image` / `chatgpt-image` skills over CDP Chrome :9222.
 
+## Deployment
+- **Tailscale (LAN):** http://100.114.88.104:3102/ — static `out/` served over the tailnet.
+- **Netlify (public):** https://abrain-smart-lock.netlify.app/ — Git-connected continuous
+  deploy from GitHub `juliusting/abrain-website` (push to `main` → auto build+publish).
+- Static export (`output: "export"`, `out/`), images unoptimized.
+
 ## Status / TODO
 - [x] Full rebuild in industrial theme, all 5 pages, AI imagery (ChatGPT + Gemini).
+- [x] Deployed to Tailscale + Netlify, all routes verified 200.
 - [ ] Replace FastEV-branded `public/og-image.png` with an Abrain OG image.
-- [ ] Client review before any deploy. NOT deployed. Demo/recreation — confirm consent with
-      Abrain before publishing publicly.
+- [ ] This is an unofficial RECREATION/demo — confirm consent with Abrain before promoting the
+      public link, and point the domain only with their agreement.
